@@ -24,20 +24,22 @@ default: &default
 development:
   <<: *default
   database: sales_loft_app_development
+  username: Daniel
+  password: phoenix12
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: sales_loft_app
+  #username: Daniel
 
   # The password associated with the postgres role (username).
-  #password:
+  #password: phoenix12
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  #host: localhost
+  #host: ''
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
@@ -58,6 +60,8 @@ development:
 test:
   <<: *default
   database: sales_loft_app_test
+  username: Daniel
+  password: phoenix12
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,5 +85,5 @@ test:
 production:
   <<: *default
   database: sales_loft_app_production
-  username: sales_loft_app
-  password: <%= ENV['SALES_LOFT_APP_DATABASE_PASSWORD'] %>
+  username: Daniel
+  password: phoenix12

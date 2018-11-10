@@ -1,5 +1,5 @@
 {
-    "name": "sales_loft_app",
+    "name": "sales-loft-app",
     "engines": {
       "node": "9.9.0"
     },
@@ -9,3 +9,4 @@
       "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
     }
   }
+
